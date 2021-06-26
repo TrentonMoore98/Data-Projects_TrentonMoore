@@ -7,8 +7,8 @@ For visualization, I mainly use Tableau.
 
 ## Let's talk
 
-[LinkedIn](https://www.linkedin.com/in/tmtrentmoore/) - Connect with me, and get to know my professional background and experience
-[Tableau Public](https://public.tableau.com/profile/trenton.moore4482#!/?newProfile=&activeTab=0) - My public dashboards created in Tableau
+* [LinkedIn](https://www.linkedin.com/in/tmtrentmoore/) - Connect with me, and get to know my professional background and experience
+* [Tableau Public](https://public.tableau.com/profile/trenton.moore4482#!/?newProfile=&activeTab=0) - My public dashboards created in Tableau
 
 ## Skills
 
