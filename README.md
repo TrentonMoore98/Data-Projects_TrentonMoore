@@ -12,6 +12,6 @@ For visualization, I mainly use Tableau.
 
 ## Skills
 
-** SQL - Intermediate SQL programmer, understand foundations and how to translate those into meaningful analysis
-** Tableau - Skilled dashboard creator. Know how to create interactive dashboards, so stakeholders and business partners can interact and provide a feedback loop for the most effective dashboard for good decision making.
+* SQL - Intermediate SQL programmer, understand foundations and how to translate those into meaningful analysis
+* Tableau - Skilled dashboard creator. Know how to create interactive dashboards, so stakeholders and business partners can interact and provide a feedback loop for the most effective dashboard for good decision making.
 * Excel - Intermediate excel user. Data cleaning, processing and analysis. 
