@@ -2,8 +2,9 @@
 The goal of this project was the following: 
 * **Get data** from *Our World in Data* on COVID-19 deaths and vaccinations worldwide
 * **Data Cleaning and preparation** in Excel
+* **Cleaning** data for joins and visualization in BigQuery
 * **Exploratory Data Analysis** in BigQuery from Jan 2020 to May 2021 data, and a 12 month projection of population infected for some countries.
-* **Cleaning** data for joins and visualization
+
 * Create **Visual Dashboard** in **Tableau** to **describe** and **forecast** the future of the COVID-19 pandemic
 
 
