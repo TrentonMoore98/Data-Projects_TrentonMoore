@@ -96,7 +96,7 @@ ORDER BY
   PercentPopulationInfected DESC;
   
 -- 4. TABLEAU QUERY 4
--- I build a time series that shows Infection rate for each country, over the course of Jan 2020 - May 2021
+-- I build a time series that shows the percent of population infected for each country, over the course of Jan 2020 - May 2021
 Select 
   Location, 
   Population, 
