@@ -33,6 +33,29 @@ ORDER BY
   1, 
   2;
   
+-- GLOBAL NUMBERS BY DATE
+-- We can see from our data the 5 deadliest days of covid
+SELECT 
+  date, 
+  SUM(new_cases) AS total_cases, 
+  SUM(new_deaths) AS total_deaths, 
+  (
+    SUM(new_deaths) / SUM(new_cases)
+  )* 100 As DeathPercentageDaily 
+FROM 
+  `probable-sprite-316417.covid_death.covid_data` 
+WHERE 
+  continent IS NOT NULL 
+  AND new_deaths IS NOT NULL 
+  AND total_deaths IS NOT NULL 
+  AND new_cases IS NOT NULL 
+GROUP BY 
+  date 
+ORDER BY 
+  DeathPercentageDaily DESC 
+LIMIT 
+  5;
+  
 -- Showing countries with higest death count per population
 -- I converted total_deaths to an integer datatype with "CAST" in order to get accurate number
 -- Added "WHERE" line to get rid of duplicate data 
@@ -140,28 +163,7 @@ GROUP BY
 ORDER BY 
   Total_Death_Count DESC;
 
--- GLOBAL NUMBERS BY DATE
--- We can see from our data the 5 deadliest days of covid
-SELECT 
-  date, 
-  SUM(new_cases) AS total_cases, 
-  SUM(new_deaths) AS total_deaths, 
-  (
-    SUM(new_deaths) / SUM(new_cases)
-  )* 100 As DeathPercentageDaily 
-FROM 
-  `probable-sprite-316417.covid_death.covid_data` 
-WHERE 
-  continent IS NOT NULL 
-  AND new_deaths IS NOT NULL 
-  AND total_deaths IS NOT NULL 
-  AND new_cases IS NOT NULL 
-GROUP BY 
-  date 
-ORDER BY 
-  DeathPercentageDaily DESC 
-LIMIT 
-  5;
+
 -- We can see from our data the 5 LEAST deadliest days of covid
 SELECT 
   date, 
