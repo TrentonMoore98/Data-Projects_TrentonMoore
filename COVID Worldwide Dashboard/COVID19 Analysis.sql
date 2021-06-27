@@ -15,6 +15,83 @@ FROM
 ORDER BY 
   1, 
   2;
+  
+-- GLOBAL NUMBERS
+-- Showcase Total Cases, Total Deaths, and Effectiveness of the virus (Death Percentage)
+-- 1. TABLEAU QUERY 1
+SELECT 
+  SUM(new_cases) AS total_cases, 
+  SUM(new_deaths) AS total_deaths, 
+  (
+    SUM(new_deaths) / SUM(new_cases)
+  )* 100 As DeathPercentage 
+FROM 
+  `probable-sprite-316417.covid_death.covid_data` 
+WHERE 
+  continent IS NOT NULL 
+ORDER BY 
+  1, 
+  2;
+  
+-- Showing countries with higest death count per population
+-- I converted total_deaths to an integer datatype with "CAST" in order to get accurate number
+-- Added "WHERE" line to get rid of duplicate data 
+--2. TABLEAU QUERY 2
+SELECT 
+  Location, 
+  MAX(
+    CAST(total_deaths AS int64)
+  ) AS Total_Death_Count 
+FROM 
+  `probable-sprite-316417.covid_death.covid_data` 
+WHERE 
+  continent IS NOT NULL 
+  AND location not in (
+    'International', 'World', 'European Union'
+  ) 
+GROUP BY 
+  location 
+ORDER BY 
+  Total_Death_Count DESC;
+  
+-- Looking at countries with highest infection rate compared to population
+-- Aggregate countries daily data and population using "GROUP BY" in order to get full scope
+-- 3. TEABLEAU QUERY 3
+SELECT 
+  Location, 
+  population, 
+  MAX(total_cases) AS Highest_Infection_Count, 
+  MAX(
+    (total_cases / population)
+  )* 100 AS PercentPopulationInfected 
+FROM 
+  `probable-sprite-316417.covid_death.covid_data` 
+GROUP BY 
+  location, 
+  population 
+ORDER BY 
+  PercentPopulationInfected DESC;
+  
+-- 4. TABLEAU QUERY 4
+-- I build a time series that shows Infection rate for each country, over the course of Jan 2020 - May 2021
+Select 
+  Location, 
+  Population, 
+  date, 
+  MAX(total_cases) as HighestInfectionCount, 
+  Max(
+    (total_cases / population)
+  )* 100 as PercentPopulationInfected 
+From 
+  `probable-sprite-316417.covid_death.covid_data` 
+Group by 
+  Location, 
+  Population, 
+  date 
+order by 
+  PercentPopulationInfected desc;
+ 
+ 
 -- Looking at Total Cases vs Total Deaths
 -- DeathPercentage is the rate of death divided by total infected, represented as a percentage
 SELECT 
@@ -46,60 +123,7 @@ WHERE
 ORDER BY 
   1, 
   2;
--- Looking at countries with highest infection rate compared to population
--- Aggregate countries daily data and population using "GROUP BY" in order to get full scope
--- 3. TEABLEAU QUERY 3
-SELECT 
-  Location, 
-  population, 
-  MAX(total_cases) AS Highest_Infection_Count, 
-  MAX(
-    (total_cases / population)
-  )* 100 AS PercentPopulationInfected 
-FROM 
-  `probable-sprite-316417.covid_death.covid_data` 
-GROUP BY 
-  location, 
-  population 
-ORDER BY 
-  PercentPopulationInfected DESC;
--- 4. TABLEAU QUERY 4
-Select 
-  Location, 
-  Population, 
-  date, 
-  MAX(total_cases) as HighestInfectionCount, 
-  Max(
-    (total_cases / population)
-  )* 100 as PercentPopulationInfected 
-From 
-  `probable-sprite-316417.covid_death.covid_data` 
-Group by 
-  Location, 
-  Population, 
-  date 
-order by 
-  PercentPopulationInfected desc;
--- Showing countries with higest death count per population
--- I converted total_deaths to an integer datatype with "CAST" in order to get accurate number
--- Added "WHERE" line to get rid of duplicate data 
---2. TABLEAU QUERY 2
-SELECT 
-  Location, 
-  MAX(
-    CAST(total_deaths AS int64)
-  ) AS Total_Death_Count 
-FROM 
-  `probable-sprite-316417.covid_death.covid_data` 
-WHERE 
-  continent IS NOT NULL 
-  AND location not in (
-    'International', 'World', 'European Union'
-  ) 
-GROUP BY 
-  location 
-ORDER BY 
-  Total_Death_Count DESC;
+
 -- NOW LOOKING AT CONTINENT DATA
 -- Showing continents with the highest death count per population
 SELECT 
@@ -115,21 +139,7 @@ GROUP BY
   continent 
 ORDER BY 
   Total_Death_Count DESC;
--- GLOBAL NUMBERS
--- 1. TABLEAU QUERY 1
-SELECT 
-  SUM(new_cases) AS total_cases, 
-  SUM(new_deaths) AS total_deaths, 
-  (
-    SUM(new_deaths) / SUM(new_cases)
-  )* 100 As DeathPercentage 
-FROM 
-  `probable-sprite-316417.covid_death.covid_data` 
-WHERE 
-  continent IS NOT NULL 
-ORDER BY 
-  1, 
-  2;
+
 -- GLOBAL NUMBERS BY DATE
 -- We can see from our data the 5 deadliest days of covid
 SELECT 
