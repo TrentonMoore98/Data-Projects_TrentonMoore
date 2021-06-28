@@ -17,7 +17,8 @@ The goal of this project was the following:
 
 
 ## Results
+* Google BigQuery tables that describe different facts about the COVID-19 pandemic
 * [Tableau Dashboard](https://public.tableau.com/app/profile/trenton.moore4482/viz/WorldwideCOVIDDashboard/Dashboard1) - Colorful Tableau Dashboard showing my results and projections
-* Google BigQuery tables that describe different facts about the COVID-19 pandemic, as well as some projections.
+
 ## Screenshot of Dashboard
 ![Dashboard](https://imgur.com/8fUWdNA.png)
