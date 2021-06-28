@@ -61,7 +61,8 @@ LIMIT
 -- Added "WHERE" line to get rid of duplicate data 
 --2. TABLEAU QUERY 2
 SELECT 
-  Location, 
+  Continent,
+  Location,
   MAX(
     CAST(total_deaths AS int64)
   ) AS Total_Death_Count 
@@ -73,7 +74,7 @@ WHERE
     'International', 'World', 'European Union'
   ) 
 GROUP BY 
-  location 
+  continent 
 ORDER BY 
   Total_Death_Count DESC;
   
