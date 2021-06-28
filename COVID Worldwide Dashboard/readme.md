@@ -10,7 +10,7 @@ The goal of this project was the following:
 
 
 ## Approach
-* Organized datasets in Excel for easier querying and joining
+* Organized datasets in Excel for easier querying
 * Pull data in BigQuery using queries, also created a temp table to partition and do an aggregate function on different parameters if need be
 * Manipulate the data using BigQuery
 * Create Tableau dashboard to desribe findings
