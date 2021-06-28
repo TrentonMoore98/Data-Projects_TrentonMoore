@@ -56,7 +56,7 @@ ORDER BY
 LIMIT 
   5;
   
--- Showing countries with higest death count per population
+-- Showing continents with higest death count per population
 -- I converted total_deaths to an integer datatype with "CAST" in order to get accurate number
 -- Added "WHERE" line to get rid of duplicate data 
 --2. TABLEAU QUERY 2
