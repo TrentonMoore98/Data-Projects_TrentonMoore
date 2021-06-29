@@ -74,7 +74,7 @@ WHERE
     'International', 'World', 'European Union'
   ) 
 GROUP BY 
-  continent 
+  location
 ORDER BY 
   Total_Death_Count DESC;
   
