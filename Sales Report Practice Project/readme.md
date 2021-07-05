@@ -1,23 +1,14 @@
 ## Summary
 The goal of this project was the following: 
-* **Get data** from *Our World in Data* on COVID-19 deaths and vaccinations worldwide
-* **Ask** pertinent questions about the rows and columns, the facts and dimensions. I want to figure out ***what*** has happened to us over the course of the pandemic.
-* **Data organization and processing** in Excel
-* **Cleaning** data in BigQuery for joins and visualization.
-* **Exploratory Data Analysis** in BigQuery from Jan 2020 to May 2021 data.
-
-* Create **Visual Dashboard** in **Tableau** to **describe** and **forecast** the future of the COVID-19 pandemic
+* **First line**
 
 
 ## Approach
-* Organized datasets in Excel for easier querying
-* Pull data in BigQuery using queries, also created a temp table to partition and do an aggregate function on different parameters if need be
-* Manipulate the data using BigQuery
-* Create Tableau dashboard to desribe findings
+* 123
 
 
 ## Results
-* Google BigQuery tables that describe different facts about the COVID-19 pandemic
-* [Tableau Dashboard](https://public.tableau.com/app/profile/trenton.moore4482/viz/WorldwideCOVIDDashboard/Dashboard1) - Colorful Tableau Dashboard showing my results and projections
+* Google BigQuery tables that describe business events and calculating customer metrics
+* Power BI Interavtive Dashboard for stakeholders (Sales Manager, Sales Representatives) to utilize
 
 ## Screenshot of Dashboard
