@@ -12,3 +12,6 @@
 # 4. ROI Summary Table
 ![ROI Table](https://i.imgur.com/EdyQ6gw.png)
 
+# 5. ROI, Visualized
+![ROI Viz](https://i.imgur.com/uXyTLxS.png)
+
