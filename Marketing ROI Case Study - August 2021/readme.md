@@ -1,3 +1,5 @@
+# [Link to full write-up on my website](https://tmtrentmoore.wixsite.com/hellotrentonm/general-5)
+
 # Summary
 
 ## The goal of this project was the following:
