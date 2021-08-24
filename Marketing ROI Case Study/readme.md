@@ -16,4 +16,4 @@
 * ### Excel Pivots and Summary Tables to help organize findings and to find insights
 * ### [Beautiful Tableau visualization that showcases findings](https://public.tableau.com/app/profile/trenton.moore4482/viz/markting_16292350272030/Dashboard1?publish=yes) 
 
-![Tableau Marketing Viz](https://imgur.com/gallery/RUcn40D)
+![Tableau Marketing Viz](https://imgur.com/gallery/RUcn40D.png)
