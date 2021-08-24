@@ -1,6 +1,6 @@
 # Summary
 ## The goal of this project was the following:
-* ###Get data from Our World in Data data set
+* ### Get data from Our World in Data data set
 * ### Ask descriptive questions about the rows and columns, the facts and dimensions. I want to figure out what has happened over the course of the pandemic.
 * ### Organization and Processing data in Excel
 * ### Cleaning the data in SQL for joins, and later visualization in Tableau
