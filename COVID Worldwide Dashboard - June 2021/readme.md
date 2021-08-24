@@ -1,3 +1,4 @@
+# [Link to full write-up on my website](https://tmtrentmoore.wixsite.com/hellotrentonm/covid-worldwide-data-project)
 # Summary
 ## The goal of this project was the following:
 * ### Get data from Our World in Data data set
