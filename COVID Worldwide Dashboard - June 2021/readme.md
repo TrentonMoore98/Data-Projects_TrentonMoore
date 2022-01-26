@@ -17,4 +17,3 @@
 # Results
 * ### Google BigQuery tables that describe different facts about the COVID-19 pandemic
 * ### [Tableau Dashboard](https://public.tableau.com/app/profile/trenton.moore4482/viz/WorldwideCOVIDDashboard/Dashboard1) - Colorful dashboard that visualizes all my findings into one
-![Tableau COVID Viz](https://media-exp1.licdn.com/dms/image/C4E22AQFppnY_MHL88g/feedshare-shrink_2048_1536/0/1624379772437?e=1632960000&v=beta&t=DTkCx1XlymEAqrBNjS0FXL5FECIPjMvg2cmtHsHT18Y)
