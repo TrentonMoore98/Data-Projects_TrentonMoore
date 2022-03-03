@@ -5,6 +5,13 @@ This is a place where I can post my projects in data analytics. Each folder cont
 I am experienced in SQL and Excel for cleaning and analysis, along with data structure and querying in SQL.
 For visualization, I mainly use Tableau. I have some experience with RStudio programming and creating reports in RPubs. 
 
+# Projects
+* **January, 2022,** - [Bellabeat Case Study (RStudio, RPubs)](https://rpubs.com/TrentonAMoore98/857262)
+*
+*
+*
+
+
 
 ## Experience
 * **Bachelor's in Science (BIS) in Media Entrepreneurship, Georgia State University, December 2019.** I studied innovation and disruption in industries, and applying high-level business concepts to identifying and solving business problems creatively. [Click here to check out my courseload and school projects.](https://wordpress.com/page/trentonamoore98.wordpress.com/235)
