@@ -6,7 +6,7 @@ I am experienced in SQL and Excel for cleaning and analysis, along with data str
 For visualization, I mainly use Tableau.
 
 ## Experience
-* Bachelor's in Science (BIS) in Media Entrepreneurship, Georgia State University, December 2019. I studied innovation and disruption in industries, and applying high-level business concepts to identifying and solving business problems creatively. [Click here to check out my courseload and school projects.](https://wordpress.com/page/trentonamoore98.wordpress.com/235)
+* **Bachelor's in Science (BIS) in Media Entrepreneurship, Georgia State University, December 2019.** I studied innovation and disruption in industries, and applying high-level business concepts to identifying and solving business problems creatively. [Click here to check out my courseload and school projects.](https://wordpress.com/page/trentonamoore98.wordpress.com/235)
 
 
 
