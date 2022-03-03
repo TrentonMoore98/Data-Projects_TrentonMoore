@@ -6,7 +6,7 @@ I am experienced in SQL and Excel for cleaning and analysis, along with data str
 For visualization, I mainly use Tableau. I have some experience with RStudio programming and creating reports in RPubs. 
 
 # Projects
-* **January, 2022,** - [Bellabeat Case Study (RStudio, RPubs)](https://rpubs.com/TrentonAMoore98/857262)
+* **January, 2022** - [Bellabeat Case Study (RStudio, RPubs)](https://rpubs.com/TrentonAMoore98/857262)
 *
 *
 *
