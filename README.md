@@ -7,7 +7,7 @@ For visualization, I mainly use Tableau.
 
 ## Experience
 * Bachelor's in Science (BIS) in Media Entrepreneurship, Georgia State University, December 2019.
-### Learned
+### ** hi 
 
 
 
