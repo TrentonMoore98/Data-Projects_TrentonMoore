@@ -1,5 +1,0 @@
-# Summary 
-
-# Approach
-
-# Results
