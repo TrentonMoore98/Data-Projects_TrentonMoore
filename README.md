@@ -17,6 +17,8 @@
 - ## [Retail Sales Analysis Dashboard](https://www.linkedin.com/feed/update/urn:li:activity:6851613591418802176/) - **October 2021**
 - ## [Marketing ROI Ad Spend Analysis](https://tmtrentmoore.wixsite.com/hellotrentonm/general-5) - **August 2021 - October 2021**
 
+&nbsp;
+
 ---
 
 &nbsp;
@@ -25,6 +27,8 @@
 * ## **Bachelor's in Science (BIS) in Media Entrepreneurship, Georgia State University, December 2019.** I studied innovation and disruption in industries, and applying high-level business concepts to identifying and solving business problems creatively. [Click here to check out my courseload and school projects.](https://wordpress.com/page/trentonamoore98.wordpress.com/235)
 * ## **Google Data Analytics Professional Certificate, January 25, 2022.** This course gave me a high-level overview of applying a technical mindset to business problems with analytics utilizing programs such as Excel (Data Analysis Toolpak), SQL (BigQuery), RStudio, and Tableau. [Click here to view my certificate.](https://trentonamoore98.wordpress.com/google-data-analytics-certificate-learning-log-trenton-moore/)
 * ## **SQL for Data Science Course, UC Davis.** - Currently enrolled as of March 2, 2022. I'm taking this course to further develop my skills in SQL. 
+
+&nbsp;
 
 ---
 
@@ -36,6 +40,8 @@
 * ## Tableau - Skilled dashboard creator. Know how to create interactive dashboards, so stakeholders and business partners can interact and provide a feedback loop for the most effective dashboard for good decision making.
 * ## Excel - Intermediate excel user. Data cleaning, processing and analysis. Data Analysis Toolpak experience. 
 * ## RStudio, RPubs - Beginner knowledge coding in RStudio, utilziing libraries such as ggplot, tidyverse, and others to analyze data. 
+
+&nbsp;
 
 ---
 
