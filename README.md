@@ -33,7 +33,7 @@
 
 * ## **Google Data Analytics Professional Certificate, January 25, 2022.** This course gave me a high-level overview of applying a technical mindset to business problems with analytics utilizing programs such as Excel (Data Analysis Toolpak), SQL (BigQuery), RStudio, and Tableau. [Click here to view my certificate.](https://trentonamoore98.wordpress.com/google-data-analytics-certificate-learning-log-trenton-moore/)
 
-* ## **SQL for Data Science Course, UC Davis.** - Currently enrolled as of March 2, 2022. I'm taking this course to further develop my skills in SQL. 
+* ## **SQL for Data Science Course, UC Davis.** - Currently enrolled as of April 2, 2022. I'm taking this course to further develop my skills in SQL. 
 
 &nbsp;
 
