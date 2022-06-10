@@ -7,7 +7,8 @@
 
 ---
 
-# Projects - ## Refer to website
+# Projects (Most Recent)
+## [*CLICK HERE* To view every project I've worked on](https://trentonamoore98.wordpress.com/projects-2/)
 
 - ## [Email Marketing Case Study](https://trentonamoore98.wordpress.com/email-marketing-case-study/?preview_id=584&preview_nonce=53d1ebcb15&preview=true) - **April 2022**
 - ## [Fitness Tracker Case Study (RStudio, RPubs)](https://rpubs.com/TrentonAMoore98/857262) - **January 2022** 
