@@ -8,7 +8,7 @@
 ---
 
 # Projects
-- **January, 2022** - [Bellabeat Case Study (RStudio, RPubs)](https://rpubs.com/TrentonAMoore98/857262)
+## - **January, 2022** - [Bellabeat Case Study (RStudio, RPubs)](https://rpubs.com/TrentonAMoore98/857262)
 - **
 -
 -
