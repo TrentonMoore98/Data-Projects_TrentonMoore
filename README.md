@@ -7,12 +7,12 @@
 
 ---
 
-# Projects
+# Projects - ## Refer to website
+
 - ## [Email Marketing Case Study](https://trentonamoore98.wordpress.com/email-marketing-case-study/?preview_id=584&preview_nonce=53d1ebcb15&preview=true) - **April 2022**
 - ## [Fitness Tracker Case Study (RStudio, RPubs)](https://rpubs.com/TrentonAMoore98/857262) - **January 2022** 
 - ## [Retail Sales Analysis Dashboard](https://www.linkedin.com/feed/update/urn:li:activity:6851613591418802176/) - **October 2021**
 - ## [Marketing ROI Ad Spend Analysis](https://tmtrentmoore.wixsite.com/hellotrentonm/general-5) - **August 2021 - October 2021**
-- ## [Covid-19 Analysis, Jan 2020 - June 2021](https://tmtrentmoore.wixsite.com/hellotrentonm/covid-worldwide-data-project) - **June 2021**
 
 ---
 
