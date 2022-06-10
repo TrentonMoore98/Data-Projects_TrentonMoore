@@ -1,5 +1,5 @@
 # [Link to full write-up on my website](https://tmtrentmoore.wixsite.com/hellotrentonm/general-5)
-# Date: 
+# *August 2021 - October 2021*
 
 # Summary
 
