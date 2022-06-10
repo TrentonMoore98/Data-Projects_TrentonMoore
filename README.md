@@ -1,8 +1,8 @@
 # Summary
 
-This is a place where I can post my projects in data analytics. Each folder contains a readme to describe the given project, along with my strategy and results. I will also include links to visual dashboards.
+## This is a place where I can post my projects in data analytics. Each folder contains a readme to describe the given project, along with my strategy and results. I will also include links to visual dashboards.
 
-I am experienced in SQL and Excel for cleaning and analysis, along with data structure and querying in SQL.
+## I am experienced in SQL and Excel for cleaning and analysis, along with data structure and querying in SQL.
 For visualization, I mainly use Tableau. I have some experience with RStudio programming and creating reports in RPubs. 
 
 ---
