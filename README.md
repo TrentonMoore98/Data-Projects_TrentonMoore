@@ -29,11 +29,11 @@
 
 # Experience
 
-* ## **Bachelor's in Science (BIS) in Media Entrepreneurship, Georgia State University, December 2019.** I studied innovation and disruption in industries, and applying high-level business concepts to identifying and solving business problems creatively. [Click here to check out my courseload and school projects.](https://trentonamoore98.wordpress.com/georgia-state-university-courses/)
+* ## **[December 2019] Bachelor's in Science (BIS) in Media Entrepreneurship, Georgia State University, December 2019.** I studied innovation and disruption in industries, and applying high-level business concepts to identifying and solving business problems creatively. [Click here to check out my courseload and school projects.](https://trentonamoore98.wordpress.com/georgia-state-university-courses/)
 
-* ## **Google Data Analytics Professional Certificate, January 25, 2022.** This course gave me a high-level overview of applying a technical mindset to business problems with analytics utilizing programs such as Excel (Data Analysis Toolpak), SQL (BigQuery), RStudio, and Tableau. [Click here to view my certificate.](https://trentonamoore98.wordpress.com/google-data-analytics-certificate-learning-log-trenton-moore/)
+* ## **[January 2022] Google Data Analytics Professional Certificate, January 25, 2022.** This course gave me a high-level overview of applying a technical mindset to business problems with analytics utilizing programs such as Excel (Data Analysis Toolpak), SQL (BigQuery), RStudio, and Tableau. [Click here to view my certificate.](https://trentonamoore98.wordpress.com/google-data-analytics-certificate-learning-log-trenton-moore/)
 
-* ## **SQL for Data Science Course, UC Davis.** - [Click here to view certificate](https://coursera.org/share/896dfda3ba0e82be911e290f31f92d8f) - Course focused on intermediate SQL syntax and querying. 
+* ## **[June 2022] SQL for Data Science Course, UC Davis.** - [Click here to view certificate](https://coursera.org/share/896dfda3ba0e82be911e290f31f92d8f) - Course focused on intermediate SQL syntax and querying. 
 
 &nbsp;
 
