@@ -5,7 +5,7 @@
 
 # **Summary**
 
-
+Looking at 110,000 rows of data, profile the data and understand some descriptive facts about the metadata as well as the business problem. 
 
 
 
