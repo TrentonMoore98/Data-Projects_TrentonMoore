@@ -1,6 +1,8 @@
 # **Yelp Data Profiling and Analysis Project**
 ## [Completed June 22, 2022 [Certificate]](https://coursera.org/share/896dfda3ba0e82be911e290f31f92d8f)
 
+[Entity Relationship Diagram Used for the Project](https://github.com/MerEsf/DataScience_SQL/blob/master/Yelp.png)
+
 ---
 
 # **Summary**
@@ -21,7 +23,20 @@
 
 # **Results**
 
-* ## hi hih ih  
+## Part 1
+
+* ### No Nulls in data.
+* ### Tips about the Busienss receive negligible engagement.
+* ### Average user has 24 reviews.
+* ### Las Vegas has the most reviews.
+* ### Cities have a variety of ratings. 
+* ### Funny reviews correlate to more fans than does amount of reviews overall.
+* ### **Sentiment Analysis:** More reviews with the word love in them.
+
+## Part 2
+
+* ### **Strong correlation** between businesses and their ratings.
+* ### Not a strong correlation of star ratings and likes a business has.
 
 
 
