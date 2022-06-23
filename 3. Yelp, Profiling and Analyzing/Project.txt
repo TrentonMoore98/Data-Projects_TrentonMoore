@@ -1,0 +1,478 @@
+Part 1: Yelp Dataset Profiling and Understanding
+
+1. Profile the data by finding the total number of records for each of the tables below:
+	
+i. Attribute table = 10,000 rows
+ii. Business table = 10,000 rows
+iii. Category table = 10,000 rows
+iv. Checkin table = 10,000 rows
+v. elite_years table = 10,000 rows
+vi. friend table = 10,000 rows
+vii. hours table = 10,000 rows
+viii. photo table = 10,000 rows
+ix. review table = 10,000 rows
+x. tip table = 10,000 rows
+xi. user table = 10,000 rows
+	
+In total, that’s 110,000 rows of code.
+
+Code used for #1 : 
+SELECT COUNT(*)
+FROM [TableName]
+
+
+———————————————
+
+
+
+2. Find the total distinct records by either the foreign key or primary key for each table. If two foreign keys are listed in the table, please specify which foreign key.
+
+i. Business (id, primary key) = 10,000 unique ID's
+ii. Hours (business_id, foreign key) = 1562 unique ID's
+iii. Category (business_id, foreign key) = 2643 unique ID's
+iv. Attribute (business_id, foreign key) = 1115 unique ID's
+v. Review (id, primary key) = 10,000 unique ID's
+vi. Checkin (business_id, foreign key) = 493 unique ID's
+vii. Photo (id, primary key) = 10,000 unique ID's
+viii. Tip (user_id, foreign key) = 537 unique ID's
+ix. User (id, primary key) = 10,000 unique ID's
+x. Friend (user_id, foreign key) = 11 unique ID's
+xi. Elite_years (user_id, foreign key) = 2780 unique ID's
+
+Note: Primary Keys are denoted in the ER-Diagram with a yellow key icon.
+
+
+
+Code used #2: 
+SELECT COUNT(DISTINCT(user_id)
+FROM elite_years
+
+
+———————————————
+
+3. Are there any columns with null values in the Users table? Indicate "yes," or "no."
+
+	Answer: There are no NULL values in any of the columns in the User table.
+	
+	
+	SQL code used to arrive at answer:
+	
+	
+SELECT id, name, review_count, yelping_since, useful, funny, cool, fans,
+average_stars, compliment_hot, compliment_more, compliment_profile,
+compliment_cute, compliment_list, compliment_note, compliment_plain,
+compliment_cool, compliment_funny, compliment_writer, compliment_photos
+FROM User
+WHERE compliment_photos IS NULL 
+OR name IS NULL
+OR useful IS NULL
+OR .... 
+OR .....
+
+
+
+———————————————
+
+
+	
+4. For each table and column listed below, display the smallest (minimum), largest (maximum), and average (mean) value for the following fields:
+
+	i. Table: Review, Column: Stars
+	
+		min:	1	max:	5	avg: 3.71
+		
+	
+	ii. Table: Business, Column: Stars
+	
+		min:	1.0		max: 5.0		avg: 3.65
+		
+	
+	iii. Table: Tip, Column: Likes
+	
+		min:	0   	max:	2	avg: 0.01
+		
+	
+	iv. Table: Checkin, Column: Count
+	
+		min:	1	max:	53	avg: 1.94
+		
+	
+	v. Table: User, Column: Review_count
+	
+		min:	0	max:	2000		avg: 24.3
+		
+Conclusion:
+	1.	Reviews and Businesses have very similar star ratings.
+	2.	Tips do not receive a lot of likes.
+	3.	Average of ~2 Check-ins for every business. Most checkins are 53 at one business.
+	4.	User with most reviews are 2000. Average user has 24 reviews. 
+
+
+Code used: 
+SELECT min(Stars), max(stars), AVG(stars)
+FROM Review
+
+
+———————————————
+
+
+5. List the cities with the most reviews in descending order:
+
+	SQL code used to arrive at answer:
+	
+	SELECT count(review_count) AS total_reviews, city
+FROM business
+GROUP BY city
+ORDER BY total_reviews DESC
+
+	Copy and Paste the Result Below:
+
+total_reviews | city |
+
++---------------+-----------------+
+
+| 1561 | Las Vegas |
+| 1001 | Phoenix |
+| 985 | Toronto |
+| 497 | Scottsdale |
+| 468 | Charlotte |
+| 353 | Pittsburgh |
+| 337 | Montréal |
+| 304 | Mesa |
+| 274 | Henderson |
+| 261 | Tempe |
+| 239 | Edinburgh |
+| 232 | Chandler |
+| 189 | Cleveland |
+| 188 | Gilbert |
+| 188 | Glendale |
+| 176 | Madison |
+| 150 | Mississauga |
+| 141 | Stuttgart |
+| 105 | Peoria |
+| 80 | Markham |
+| 71 | Champaign |
+| 70 | North Las Vegas |
+| 64 | North York |
+| 60 | Surprise |
+| 54 | Richmond Hill |
+
+———————————————
+	
+6. Find the distribution of star ratings to the business in the following cities:
+
+i. Avon
+
+SQL code used to arrive at answer:
+
+SELECT stars, review_count
+FROM business
+WHERE city = "Avon"
+ORDER BY stars
+
+
+
+Copy and Paste the Resulting Table Below (2 columns â€“ star rating and count):
+
+result: 
+stars | review_count |
++-------+--------------+
+| 1.5 | 10 |
+| 2.5 | 3 |
+| 2.5 | 3 |
+| 3.5 | 7 |
+| 3.5 | 31 |
+| 3.5 | 50 |
+| 4.0 | 4 |
+| 4.0 | 17 |
+| 4.5 | 31 |
+| 5.0 | 3 |
+
+
+ii. Beachwood
+
+SQL code used to arrive at answer:
+
+SELECT stars, review_count
+FROM business
+WHERE city = "Beachwood"
+ORDER BY stars
+
+
+Copy and Paste the Resulting Table Below (2 columns â€“ star rating and count):
+		
+result:
+stars | review_count |
++-------+--------------+
+| 2.0 | 8 |
+| 2.5 | 3 |
+| 3.0 | 8 |
+| 3.0 | 3 |
+| 3.5 | 3 |
+| 3.5 | 3 |
+| 4.0 | 69 |
+| 4.5 | 14 |
+| 4.5 | 3 |
+| 5.0 | 6 |
+| 5.0 | 4 |
+| 5.0 | 6 |
+| 5.0 | 3 |
+| 5.0 | 4 |
+
+
+conclusion: Beachwood has higher review ratings.
+
+———————————————
+
+
+
+7. Find the top 3 users based on their total number of reviews:
+		
+	SQL code used to arrive at answer:
+	
+SELECT name, id, review_count
+FROM user
+ORDER BY review_count DESC
+LIMIT 3
+
+	Copy and Paste the Result Below:
+		
+name | id | review_count |
++--------+------------------------+--------------+
+| Gerald | -G7Zkl1wIWBBmD0KRy_sCw | 2000 |
+| Sara | -3s52C4zL_DHRK0ULG6qtg | 1629 |
+| Yuri | -8lbUNlXVSoXqaRRiHiSNg | 1339 |
+
+
+conclusion: Top 3 users are Gerald, Sara, and Yuri.
+
+
+———————————————
+
+
+8. Does posting more reviews correlate with more fans?
+
+	Please explain your findings and interpretation of the results:
+	
+
+I create SQL code to look at review count. 
+SELECT distinct(id), review_count, fans
+FROM user
+ORDER BY review_count desc
+
+id | review_count | fans |
++------------------------+--------------+------+
+| -G7Zkl1wIWBBmD0KRy_sCw | 2000 | 253 |
+| -3s52C4zL_DHRK0ULG6qtg | 1629 | 50 |
+| -8lbUNlXVSoXqaRRiHiSNg | 1339 | 76 |
+| -K2Tcgh2EKX6e6HqqIrBIQ | 1246 | 101 |
+| -FZBTkAZEXoP7CYvRV2ZwQ | 1215 | 126 |
+| --2vR0DIsmQ6WfcSzKWigw | 1153 | 311 |
+| -gokwePdbXjfS0iF7NsUGA | 1116 | 16 |
+| -DFCC64NXgqrxlO8aLU5rg | 1039 | 104 |
+| -8EnCioUmDygAbsYZmTeRQ | 968 | 497 |
+| -0IiMAZI2SsQ7VmyzJjokQ | 930 | 173 |
+| -fUARDNuXAfrOn4WLSZLgA | 904 | 38 |
+| -hKniZN2OdshWLHYuj21jQ | 864 | 43 |
+| -9da1xk7zgnnfO1uTVYGkA | 862 | 124 |
+| -B-QEUESGWHPE_889WJaeg | 861 | 115 |
+| -kLVfaJytOJY2-QdQoCcNQ | 842 | 85 |
+| -kO6984fXByyZm3_6z2JYg | 836 | 37 |
+| -lh59ko3dxChBSZ9U7LfUw | 834 | 120 |
+| -g3XIcCb2b-BD0QBCcq2Sw | 813 | 159 |
+| -l9giG8TSDBG1jnUBUXp5w | 775 | 61 |
+| -dw8f7FLaUmWR7bfJ_Yf0w | 754 | 78 |
+| -AaBjWJYiQxXkCMDlXfPGw | 702 | 35 |
+| -jt1ACMiZljnBFvS6RRvnA | 696 | 10 |
+| -IgKkE8JvYNWeGu8ze4P8Q | 694 | 101 |
+| -hxUwfo3cMnLTv-CAaP69A | 676 | 25 |
+| -H6cTbVxeIRYR-atxdielQ | 675 | 45
+
+Based on results, we can conclude that:
+	•	Number of reviews do not correlate with number of fans. 
+	◦	Person with 2000 reviews has 253 fans. 
+	◦	Person with 1629 (2nd highest) reviews has 50 fans. 
+	•	Most number of fans are 503, and they only have 609 reviews.  
+
+
+———————————————
+
+	
+9. Are there more reviews with the word "love" or with the word "hate" in them?
+
+	Answer: There are more reviews with the word "love" in them.
+
+Love: 1780 words
+Hate: 232 words
+
+
+	
+	SQL code used to arrive at answer:
+
+SELECT count(*) AS LoveReview
+FROM review
+WHERE text LIKE "%love%"
+
+| LoveReview |
++------------+
+| 1780 |
+
+
+SELECT count(*) AS HateReview
+FROM review
+WHERE text LIKE "%hate%"
+| HateReview |
++------------+
+| 232 |
+
+
+———————————————
+	
+	
+10. Find the top 10 users with the most fans:
+
+	SQL code used to arrive at answer:
+	
+SELECT name, fans
+FROM user
+ORDER BY fans DESC
+LIMIT 10
+	
+	Copy and Paste the Result Below:
+
+
+| name | fans |
++-----------+------+
+| Amy | 503 |
+| Mimi | 497 |
+| Harald | 311 |
+| Gerald | 253 |
+| Christine | 173 |
+| Lisa | 159 |
+| Cat | 133 |
+| William | 126 |
+| Fran | 124 |
+| Lissa | 120 |
+
+———————————————
+
+PART 2 —— 
+
+1. Pick one city and category of your choice and group the businesses in that city or category by their overall star rating. Compare the businesses with 2-3 stars to the businesses with 4-5 stars and answer the following questions. Include your code.
+	
+i. Do the two groups you chose to analyze have a different distribution of hours? Yes
+
+
+ii. Do the two groups you chose to analyze have a different number of reviews? Yes
+         
+         
+iii. Are you able to infer anything from the location data provided between these two groups? Explain.
+
+We can infer that businesses with longer working hours have higher ratings. Businesses in the same neighborhood have the same ratings usually and working hours.
+
+
+
+select
+business.name
+, business.city
+, category.category
+, business.stars
+, hours.hours
+, business.review_count
+, business.postal_code
+from (business inner join category on business.id = category.business_id) inner join hours on hours.business_id = category.business_id
+where business.city = 'Mesa' 
+group by business.stars;
+
+
+———————
+
+2. Group business based on the ones that are open and the ones that are closed. What differences can you find between the ones that are still open and the ones that are closed? List at least two differences and the SQL code you used to arrive at your answer.
+		
+i. Difference 1:
+
+The businesses that are still open have more reviews than closed ones.
+         
+         
+ii. Difference 2:
+         
+Closed businesses have shorter working hours.         
+         
+SQL code used for analysis:
+
+select
+business.name
+, business.is_open
+, category.category
+, business.stars
+, hours.hours
+, business.review_count
+, business.postal_code
+from (business inner join category on business.id = category.business_id) inner join hours on hours.business_id = category.business_id
+where business.city = 'Mesa' 
+group by business.is_open;
+
+
+
+———————
+
+3. For this last part of your analysis, you are going to choose the type of analysis you want to conduct on the Yelp dataset and are going to prepare the data for analysis.
+
+Ideas for analysis include: Parsing out keywords and business attributes for sentiment analysis, clustering businesses to find commonalities or anomalies between them, predicting the overall star rating for a business, predicting the number of fans a user will have, and so on. These are just a few examples to get you started, so feel free to be creative and come up with your own problem you want to solve. Provide answers, in-line, to all of the following:
+	
+
+
+
+i. Indicate the type of analysis you chose to do:
+         
+Finding correlation between the likes with the given rates and using like in the reviews.
+    
+     
+ii. Write 1-2 brief paragraphs on the type of data you will need for your analysis and why you chose that data:
+                           
+      
+ I need to sources of data (tables). First, need to join two tables based on business and users. Then I can sort based on the rating to find a correlation between likes and the number of star ratings. There is not a strong correlation to likes and star ratings. 
+
+            
+iii. Output of your finished dataset:
+       
+
+| stars | likes |
++-------+-------+
+|     3 |     2 |
+|     5 |     2 |
+|     5 |     1 |
+|     5 |     1 |
+|     5 |     1 |
+|     5 |     1 |
+|     5 |     1 |
+|     5 |     1 |
+|     5 |     1 |
+|     5 |     1 |
+|     3 |     1 |
+|     4 |     1 |
+|     4 |     1 |
+|     4 |     1 |
+|     4 |     1 |
+|     4 |     1 |
+|     4 |     1 |
+|     4 |     1 |
+|     4 |     1 |
+|     4 |     1 |
+|     4 |     1 |
+|     4 |     1 |
+|     4 |     1 |
+|     4 |     1 |
+|     4 |     1 |
+  
+         
+iv. Provide the SQL code you used to create your final dataset:
+
+
+select
+  review.stars
+, tip.likes
+from review inner join tip on review.user_id = tip.user_id
+order by tip.likes desc;
+
+
