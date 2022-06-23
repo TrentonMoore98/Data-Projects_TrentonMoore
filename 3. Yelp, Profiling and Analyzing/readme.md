@@ -5,7 +5,7 @@
 
 # **Summary**
 
-Looking at 110,000 rows of data, profile the data and understand some descriptive facts about the metadata as well as the business problem. 
+## Looking at 110,000 rows of data, profile the data and understand some descriptive facts about the metadata as well as identifying a business need with the descriptive facts.
 
 
 
@@ -13,12 +13,19 @@ Looking at 110,000 rows of data, profile the data and understand some descriptiv
 
 # **Approach**
 
-
+## Use SQL and TextEdit to organize and execute on questions to find answers.
 
 
 
 ---
 
-
-
 # **Results**
+
+* ## hi hih ih  
+
+
+
+
+
+
+
