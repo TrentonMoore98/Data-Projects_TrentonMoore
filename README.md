@@ -47,7 +47,7 @@
 * ## SQL - Using SQL to uncover insights about business problems.
 * ## Tableau - Skilled dashboard creator. Know how to create interactive dashboards, so stakeholders and business partners can interact and provide a feedback loop for the most effective dashboard for good decision making.
 * ## Excel - Intermediate excel user. Data cleaning, processing and analysis. Data Analysis Toolpak experience. 
-* ## RStudio, RPubs - Beginner knowledge coding in RStudio, utilziing libraries such as ggplot, tidyverse, and others to analyze data. 
+* ## RStudio, RPubs - Knowledge coding in RStudio, utilziing libraries such as ggplot, tidyverse, and others to analyze data. 
 
 &nbsp;
 
